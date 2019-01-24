@@ -1,0 +1,7 @@
+index:
+    path: /
+    controller: App\Controller\IndexController::Index
+
+api_exchange:
+    path: /api/exchange/{code}
+    controller: App\Controller\API\ExchangeController::Index

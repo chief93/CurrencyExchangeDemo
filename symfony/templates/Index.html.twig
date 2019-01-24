@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CurrencyExchange{% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{{ asset('/static/index.css') }}" />
+{% endblock %}
+{% block javascripts %}
+	<script type="text/javascript" src="{{ asset('/static/index.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+	<form class="container" id="ce-index-exchange">
+		<h1>Exchange</h1>
+		You can get the value of each of the currencies, by typing in corresponding fields<br />
+		<br />
+		<div class="form-row align-items-center">
+			<div class="col-sm-2">
+				<input class="form-control ce-index-exchange-symbol" name="symbol_base_value" placeholder="0.00" />
+			</div>
+			<div class="col-sm-2 col-form-label">
+				EUR
+				<input type="hidden" name="symbol_base_code" value="EUR" />
+			</div>
+		</div>
+		<div class="form-row align-items-center">
+			<div class="col-sm-2">
+				<input class="form-control ce-index-exchange-symbol" name="symbol_coerced_value" placeholder="0.00" />
+			</div>
+			<div class="col-sm-2 col-form-label">
+				USD
+				<input type="hidden" name="symbol_coerced_code" value="USD" />
+			</div>
+		</div>
+	</form>
+	<br /><br />
+	<div class="container">
+		Currency rates last updated at <b>{{ last_update|date("d.m.Y H:i:s") }} GMT</b>
+	</div>
+{% endblock %}

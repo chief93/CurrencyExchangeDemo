@@ -1,0 +1,25 @@
+body {
+	color: rgb(30,30,30);
+}
+
+.quark-presence-screen {
+	text-align: center;
+}
+
+.ce-container {
+	display: inline-block;
+	max-width: 1200px;
+	text-align: left;
+}
+
+
+
+#ce-header {
+	background: rgb(240,240,240);
+}
+
+#ce-header-logo {
+	font-size: 20px;
+	line-height: 20px;
+	margin: 20px 10px;
+}
