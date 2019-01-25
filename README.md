@@ -34,13 +34,13 @@ Both projects can work with same database simultaneously. You can use the `data.
 
 #### Requirements
  - [Symfony](https://symfony.com/) (4.2+)
- - SQLite (3)
+ - SQLite (3+)
  - PHP (7.1+)
  - Composer
 
 #### Installation
  1. `composer install`
- 2. Adjust application settings in `./.env-local` file
+ 2. Adjust application settings in `./.env.local` file (set the value for `DATABASE_URL`)
  > *2.1. Optional: If you haven't used the `data.db`, you can use the provided migrations for restoring database structure*
  3. Enjoy!
 
