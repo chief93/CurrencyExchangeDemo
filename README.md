@@ -30,7 +30,7 @@ Both projects can work with same database simultaneously. You can use the `data.
 #### Currency rates updating
 `$ php ./index.php /symbol/update-rates`
 
-### Laravel-based
+### Symfony-based
 
 #### Requirements
  - [Symfony](https://symfony.com/) (4.2+)
